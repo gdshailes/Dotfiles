@@ -8,7 +8,7 @@ export PARALLEL_TEST_FIRST_IS_1=true
 
 alias be="bundle exec "
 alias rspec="bundle exec rspec "
-alias prspec="bundle exec parallel_rspec spec && grep ""rspec ./"" tmp/failing_specs.log"
+alias prspec="bundle exec parallel_rspec spec && grep \"rspec ./\" ./tmp/failing_specs.log"
 alias run="bundle exec rails s -b 127.0.0.1"
 alias rails="bundle exec rails "
 alias home="cd ~/Documents/Git/Coherent"
