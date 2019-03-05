@@ -1,0 +1,15 @@
+[core]
+  excludesfile = /Users/greg/.gitignore_global
+  editor = nano
+[difftool "sourcetree"]
+  cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+  path = 
+[mergetool "sourcetree"]
+  cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+  trustExitCode = true
+[alias]
+  co = checkout
+  find = log --all --pretty=\"format:%Cgreen%H %C(cyan)%s\n%b%Creset\" --name-status --grep
+
+[user]
+  email = greg@coherent.work

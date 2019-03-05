@@ -20,4 +20,4 @@ test -f ~/.git-completion.bash && . $_
 
 eval "$(rbenv init -)"
 
-eval $(thefuck --alias arse)
+eval $(thefuck --alias doh)
