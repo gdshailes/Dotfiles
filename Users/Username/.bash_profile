@@ -9,12 +9,13 @@ export PARALLEL_TEST_FIRST_IS_1=true
 alias be="bundle exec "
 alias rspec="bundle exec rspec "
 alias prspec="bundle exec parallel_rspec spec"
-alias failing_specs="grep \"rspec ./\" ./tmp/failing_specs.log"
+alias failing-specs="grep \"rspec ./\" ./tmp/failing_specs.log"
 alias run="bundle exec rails s -b 127.0.0.1"
 alias rails="bundle exec rails "
 alias home="cd ~/Documents/Git/Coherent"
-alias reset_local_dbs="rails db:drop RAILS_ENV=development && rails db:setup RAILS_ENV=development && rails parallel:prepare RAILS_ENV=test"
+alias reset-local-dbs="~/.reset_local_dbs.sh"
 alias serveo="ssh -R coherent-dev:80:localhost:3000 serveo.net"
+alias clear-sidekiq="rails runner 'Sidekiq.redis { |conn| conn.flushdb }'"
 
 test -f ~/.git-completion.bash && . $_
 
