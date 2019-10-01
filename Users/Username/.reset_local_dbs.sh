@@ -4,9 +4,6 @@ rails db:drop RAILS_ENV=development
 echo 'Creating development databases...'
 rails db:setup RAILS_ENV=development
 
-echo 'Preparing parallel-tests databases...'
-rails parallel:prepare RAILS_ENV=test
-
 echo 'Flushing Sidekiq queues...'
 RAILS_ENV=development bundle exec rails runner 'Sidekiq.redis { |conn| conn.flushdb }'
 

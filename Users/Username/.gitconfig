@@ -3,7 +3,7 @@
   editor = nano
 [difftool "sourcetree"]
   cmd = opendiff \"$LOCAL\" \"$REMOTE\"
-  path = 
+  path =
 [mergetool "sourcetree"]
   cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
   trustExitCode = true
@@ -12,4 +12,7 @@
   find = log --all --pretty=\"format:%Cgreen%H %C(cyan)%s\n%b%Creset\" --name-status --grep
 
 [user]
-  email = greg@coherent.work
+  email =
+  name =
+[commit]
+  template = /Users/Greg/.stCommitMsg
