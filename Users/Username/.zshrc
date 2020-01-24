@@ -22,7 +22,7 @@ alias ssh-edge-1="ssh simpleweb@134.213.113.103"
 alias ssh-edge-2="ssh simpleweb@134.213.217.216"
 alias ssh-stage="ssh simpleweb@134.213.58.16"
 alias ssh-app-1="ssh simpleweb@134.213.177.101"
-alias ssh-app-2="ssh simpleweb@134.213.208.170"
+alias ssh-app-2="ssh simpleweb@134.162.13.82.50"
 alias server-pid="lsof -wni tcp:3000 | ggrep -oP '(?<=ruby\s{5})[0-9]{5}'"
 
 eval "$(rbenv init -)"
@@ -34,7 +34,7 @@ precmd() { vcs_info }
 
 # Format the vcs_info_msg_0_ variable
 zstyle ':vcs_info:git:*' formats '%b'
-
+ 
 # Set up the prompt (with git branch name)
 setopt PROMPT_SUBST
 PROMPT=$'\e[0;32m${PWD/#$HOME/~}\e[0;33m:${vcs_info_msg_0_}\e[0m\n$ '
