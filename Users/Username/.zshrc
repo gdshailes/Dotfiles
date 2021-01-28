@@ -5,12 +5,12 @@ export BUNDLER_EDITOR="Sublime Text"
 export EDITOR="nano"
 export PARALLEL_TEST_FIRST_IS_1=true
 
-
 alias finder-show-hidden="~/.finder_show_all.sh TRUE"
 alias finder-hide-hidden="~/.finder_show_all.sh FALSE"
 alias be="bundle exec "
 alias rspec="bundle exec rspec "
 alias prspec="echo 'Preparing parallel-tests databases...' && rails parallel:prepare RAILS_ENV=test && bundle exec parallel_rspec spec"
+alias retry-failed-specs="zsh ~/.retry_failed_specs.zsh"
 alias failing-specs="ggrep 'rspec.*?(?=#)' ./tmp/failing_specs.log -P -o "
 alias run="bundle exec rails s -b 127.0.0.1"
 alias rails="bundle exec rails "
