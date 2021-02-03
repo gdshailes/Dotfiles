@@ -22,7 +22,7 @@ alias ssh-edge-1="ssh simpleweb@134.213.113.103"
 alias ssh-edge-2="ssh simpleweb@134.213.217.216"
 alias ssh-stage="ssh simpleweb@134.213.58.16"
 alias ssh-app-1="ssh simpleweb@134.213.177.101"
-alias ssh-app-2="ssh simpleweb@134.162.13.82.50"
+alias ssh-app-2="ssh simpleweb@162.13.82.50"
 alias server-pid="lsof -wni tcp:3000 | ggrep -oP '(?<=ruby\s{5})[0-9]{5}'"
 
 eval "$(rbenv init -)"
